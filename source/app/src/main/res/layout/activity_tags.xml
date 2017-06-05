@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar" />
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/holder1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/tag_music_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/topbar_color"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="音乐" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/divider_gray" />
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="标签" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_taglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none" />
+
+</LinearLayout>

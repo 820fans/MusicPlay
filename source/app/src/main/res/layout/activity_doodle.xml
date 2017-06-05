@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="您正在绘制的挑战对应的标签为:"/>
+
+        <TextView
+            android:id="@+id/music_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textColor="@color/topbar_color"
+            android:text="标签"/>
+
+        <TextView
+            android:id="@+id/clock_txt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/clock"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            android:textColor="@color/themeMain"
+            android:text="30"/>
+
+    </LinearLayout>
+
+
+    <com.mp.music.constants.Doodle
+        android:id="@+id/doodle_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/color_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="颜色" />
+
+        <Button
+            android:id="@+id/paint_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="画笔" />
+
+        <Button
+            android:id="@+id/eraser_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="橡皮" />
+
+        <Button
+            android:id="@+id/shape_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="形状" />
+    </LinearLayout>
+
+</LinearLayout>

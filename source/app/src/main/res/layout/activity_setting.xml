@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/clean"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <TextView
+            style="@style/TextViewSubhead"
+            android:layout_width="fill_parent"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:text="清理缓存"/>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/ButtonPrimaryColor"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="退出登录"/>
+</LinearLayout>

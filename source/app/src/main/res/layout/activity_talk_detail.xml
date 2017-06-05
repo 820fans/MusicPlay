@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_titlebar"
+        android:layout_above="@+id/input_controlbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="1dp">
+
+            <RelativeLayout
+                android:id="@+id/holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/talk_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:background="@drawable/item_img_avatar_noradius"
+                    android:src="@drawable/menu_me_now" />
+
+                <TextView
+                    android:id="@+id/talk_account"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignTop="@id/talk_avatar"
+                    android:layout_toRightOf="@id/talk_avatar"
+                    android:text="楚留香"/>
+
+                <TextView
+                    android:id="@+id/talk_time"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/talk_account"
+                    android:layout_alignLeft="@id/talk_account"
+                    android:text="1小时前"/>
+
+                <TextView
+                    android:id="@+id/talk_title"
+                    android:layout_below="@+id/talk_avatar"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_height="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="标题"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_below="@+id/talk_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/talk_content"
+                    android:layout_below="@+id/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:singleLine="true"
+                    android:layout_height="80dp"
+                    android:text="简介"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_talkcomment"
+            android:layout_above="@+id/input_controlbar"
+            android:layout_below="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_status_controlbar" />
+
+</RelativeLayout>

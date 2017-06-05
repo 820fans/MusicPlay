@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_titlebar" />
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/guess_content"
+                style="@style/TextViewSubhead"
+                android:textAlignment="center"
+                android:textColor="@color/themeMain"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="猜测"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/divider_gray" />
+
+            <TextView
+                android:id="@+id/guess_time"
+                style="@style/TextViewSubhead"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/topbar_color"
+                android:text="猜测时刻"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/divider_gray" />
+
+            <TextView
+                android:id="@+id/guess_true"
+                style="@style/TextViewSubhead"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/green_geek"
+                android:text="是否正确"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/player_divider" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_guesses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none" />
+
+</LinearLayout>

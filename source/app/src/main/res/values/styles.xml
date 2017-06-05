@@ -1,0 +1,253 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="DialogCommon" >
+        <item name="android:windowFrame">@null</item>
+        <!-- 杈规 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 鑳屾櫙閫忔槑 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 鏄惁娴幇鍦╝ctivity涔嬩笂 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 瀵硅瘽妗嗘槸鍚︽湁閬洊 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="DialogOtherTran" parent="@style/DialogCommon">
+
+        <!-- 瀵硅瘽妗嗕互澶栧湴鏂规槸鍚﹁嚜鍔ㄥ彉鏆?-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TextViewHeadline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">@dimen/txtsize_headline</item>
+    </style>
+
+    <style name="TextViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtsize_title</item>
+    </style>
+
+    <style name="TextViewSubhead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+    </style>
+
+    <style name="TextViewBody">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">@dimen/txtsize_body</item>
+    </style>
+
+    <style name="TextViewCaption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_light_gray</item>
+        <item name="android:textSize">@dimen/txtsize_caption</item>
+    </style>
+
+    <style name="ImageView24Padding">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="ImageView16Padding">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="EditText1Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CheckBoxPlay">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--<style name="RadioButtonBottomTabHome">-->
+        <!--<item name="android:layout_width">50dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:background">@drawable/icon_home</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+    <!--<style name="RadioButtonBottomTabMsg">-->
+        <!--<item name="android:layout_width">50dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:background">@drawable/icon_meassage</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+    <!--<style name="RadioButtonBottomTabTalk">-->
+        <!--<item name="android:layout_width">50dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:background">@drawable/icon_square</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+    <!--<style name="RadioButtonBottomTabUser">-->
+        <!--<item name="android:layout_width">50dp</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:background">@drawable/icon_selfinfo</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+    <style name="RadioButtonBottomTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/topbar_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="RadioButtonStatusDetailTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/layerlist_tab_indicator_sel</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RadioButtonUserInfoTab" parent="RadioButtonStatusDetailTab">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="RadioButtonIndicatorTab">
+        <item name="android:background">@color/primary_light</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RadioButtonEmotionDashboard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/txtsize_body</item>
+        <item name="android:textColor">@drawable/txtcolor_white2black_sel</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_dgray2white_sel</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonTopBarColor">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+        <item name="android:background">@color/topbar_color</item>
+    </style>
+
+    <style name="ButtonTag">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+        <item name="android:background">@color/themeMain</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <style name="ButtonPrimaryColor">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtsize_subhead</item>
+        <item name="android:background">@color/themeMain</item>
+    </style>
+
+    <style name="ListViewCommon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="ListViewLineDivider" parent="ListViewCommon">
+        <item name="android:divider">@color/divider_gray</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="ListViewCard" parent="ListViewCommon">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">8dp</item>
+    </style>
+
+    <style name="GridViewImages">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:horizontalSpacing">4dp</item>
+        <item name="android:verticalSpacing">4dp</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+</resources>

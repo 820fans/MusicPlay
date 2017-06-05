@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MyRadioButton">
+        
+        <attr name="drawableSizeDI" format="dimension"/>
+        <attr name="drawableTopDI" format="reference"/>
+        <attr name="drawableLeftDI" format="reference"/>
+        <attr name="drawableRightDI" format="reference"/>
+        <attr name="drawableBottomDI" format="reference"/>
+        
+    </declare-styleable>
+    
+</resources>

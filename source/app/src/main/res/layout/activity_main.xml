@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar_color"
+        android:layout_gravity="bottom">
+
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.mp.music.views.MyRadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                myradio:drawableTopDI="@drawable/icon_home"
+                myradio:drawableSizeDI="25dp"
+                android:gravity="center"/>
+
+            <com.mp.music.views.MyRadioButton
+                android:id="@+id/rb_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                myradio:drawableTopDI="@drawable/icon_meassage"
+                myradio:drawableSizeDI="25dp"
+                android:gravity="center"/>
+
+            <com.mp.music.views.MyRadioButton
+                android:id="@+id/rb_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                myradio:drawableTopDI="@drawable/icon_square"
+                myradio:drawableSizeDI="25dp"
+                android:gravity="center"/>
+
+            <com.mp.music.views.MyRadioButton
+                android:id="@+id/rb_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                myradio:drawableTopDI="@drawable/icon_selfinfo"
+                myradio:drawableSizeDI="25dp"
+                android:gravity="center"/>
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_search"-->
+                <!--style="@style/RadioButtonBottomTabTalk"-->
+                <!--/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_user"-->
+                <!--style="@style/RadioButtonBottomTabUser"-->
+                <!--/>-->
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

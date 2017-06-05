@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="player_divider">#E0550F</color>
+    <color name="themeMain">#FF671B</color>
+    <color name="alpha_topbar">#66D80E4F</color>
+    <color name="topbar_color">#D80E4F</color>
+    <color name="txt_grey">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="alpha_white">#86ffffff</color>
+    <color name="black">#000000</color>
+    <color name="alpha_black">#49000000</color>
+    <color name="red">#ff403c</color>
+    <color name="green_geek">#35b558</color>
+
+    <color name="primary_dark">#5d4037</color>
+    <color name="primary">#795548</color>
+    <color name="primary_light">#d7ccc8</color>
+    <color name="orange">#ff8200</color>
+    <color name="orange_alpha">#66ff8200</color>
+    <color name="orange_dark">#d46303</color>
+
+    <color name="txt_black">#232323</color>
+    <color name="txt_gray">#565656</color>
+    <color name="txt_light_gray">#898989</color>
+
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="bg_gray_dark">#e8e8e8</color>
+    <color name="bg_agray">#49dddddd</color>
+    <color name="bg_gray_pressed">#e8e8e8</color>
+    <color name="txt_at_blue">#507daf</color>
+    <color name="bg_at_blue">#bedfff</color>
+    <color name="bg_gray_bar">#f9f9f9</color>
+    <color name="divider_gray">#d7d7d7</color>
+    <color name="divider_blue">#189ce2</color>
+    <color name="new_toolbar_color">#3f51b5</color>
+
+
+    <color name="theme_color">#48d1ae</color>
+    <color name="theme_color_light">#1de9b6</color>
+    <color name="theme_white">#ffffff</color>
+    <color name="theme_transport">#99ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_gray">#787878</color>
+    <color name="navi_text">#ffffff</color>
+    <color name="bg_dark_gray">#424242</color>
+
+    <color name="shadow">#78787878</color>
+
+
+    <color name="common_white">#ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#ff0000</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <color name="page_viewer_margin_color">#007800</color>
+
+</resources>

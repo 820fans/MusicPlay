@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/fl_content"
+        android:layout_below="@+id/pop_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/music_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/album"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/themeMain">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/white">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:max="100"
+                android:thumb="@drawable/seek_bar"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="---"/>
+
+        <TextView
+            android:id="@+id/music_singer"
+            android:layout_below="@id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/alpha_white"
+            android:textSize="20dp"
+            android:text="---"/>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_below="@id/music_singer"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_previous"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_previous"/>
+
+            <CheckBox
+                android:layout_marginTop="0dp"
+                android:id="@+id/cb_musicplay"
+                style="@style/CheckBoxPlay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:drawableTop="@drawable/icon_play_plus"  />
+
+            <ImageView
+                android:id="@+id/ic_next"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_next"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/back_wrapper"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pop_back"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:padding="12dp"-->
+            <!--android:src="@drawable/back_down"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/act_challenge"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="挑战"/>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pop_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/back_down" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/act_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/menu_paint" />
+</RelativeLayout>
